@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CustomStore</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/6232/6232684.png "/>
+  </head>
+  <body>
+    <header>
+      <h1>CustomStore</h1>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Acasa</a></li>
+          <li><a href="#">Cumpara</a></li>
+          <li><a href="#">Coș<span id="cart-count"></span></a></li>
+          <li><a href="#">Despre Noi</a></li>
+          <li><a href="#">Contacte</a></li>
+          <button class="toggle-sidebar">&#9776; Categorii</button>
+        </ul>
+      </nav>
+    
+    <aside class="sidebar">
+      <button class="close-sidebar" id="close-sidebar">&times;</button>
+      <h2>Categorii:</h2>
+      <ul>
+        <li><a href="#">Căni</a></li>
+        <li><a href="#">Tricouri</a></li>
+        <li><a href="#">Hanorace</a></li>
+      </ul>
+    </aside>
+    
+    <main>
+      <section class="cards">
+        <div class="card">
+          <img src="https://i.etsystatic.com/19342342/r/il/ca166b/1795805303/il_794xN.1795805303_c3ae.jpg">
+          <h2>Cană Customizată</h2>
+          <p>Cana personalizabila.Alege textul, culoarea si fontul.</p>
+          <button class="add-to-cart">Adaugă în coș</button>
+        </div>
+        
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71cNqwz5lpL._AC_UY1000_.jpg">
+          <h2>Tricou Customizabil</h2>
+          <p>Tricou personalizabil cu text, culoare și font.</p>
+          <button class="add-to-cart">Adaugă în coș</button>
+        </div>
+        
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61iSktPRT+L._AC_UY1000_.jpg" style="margin-bottom: -15px;">
+          <h2>Hanorac Customizabil</h2>
+          <p>Personalizează-ți hanoracul! Alege culoarea, textul și fontul.</p>
+          <button class="add-to-cart">Adaugă în coș</button>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 CustomStore. All rights reserved.</p>
+    </footer>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

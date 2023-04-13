@@ -1,0 +1,214 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+    
+  nav ul li {
+    margin-right: 20px;
+  }
+  .toggle-sidebar{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .toggle-sidebar:hover{
+    background-color: #f83c3c;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar li:hover{
+    background-color: #f83c3c;
+  }
+  .navbar li:nth-child(3) {
+    position: relative;
+  }
+  
+  .navbar li:nth-child(3) #cart-count {
+    background-color: none;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 10px;
+    line-height: 10px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: 1px;
+    width: 10px;
+  }
+  
+  
+  
+  .sidebar {
+    background-color: rgba(235, 234, 234, 0.93);
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: all 0.3s ease-in;
+    z-index: 2;
+  }
+  .sidebar li:hover{
+    background-color: #f83c3c;
+  }
+  .close-sidebar {
+    background-color: rgba(235, 234, 234, 0.1);
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 10px;
+  }
+  .close-sidebar:hover{
+    background-color: #f83c3c;
+  }
+  button{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+  }
+  button:hover{
+    background-color: #f83c3c;
+    cursor: pointer;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+  }
+  
+  .sidebar-header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .card {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+  }
+  
+  .card img {
+    vertical-align: middle;
+    max-width: 125%;
+    max-height: 250px;
+  }
+  
+  .card h2 {
+    margin-top: 20px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .categories-button {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .categories-button {
+      display: block;
+      margin-top: 20px;
+      margin: none;
+    }
+    .sidebar {
+      top: 60px;
+      left: -200px;
+    }
+    
+    .sidebar.show {
+      left: 0;
+    }
+    
+    .cards {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+  
